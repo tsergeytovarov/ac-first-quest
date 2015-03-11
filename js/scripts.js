@@ -7,9 +7,13 @@ var fieldsCount = $fields.length;
 // для единовременного показа сообщения об успешном завершении
 var message = 0;
 
+var i = 0;
+
 if (fieldsCount) { // если есть панели
 
-  for (var i = 0; i < fieldsCount; i++){ // перебираем панелт
+  for (i = 0; i < fieldsCount; i++){ // перебираем панелт
+
+    $fields[i].setAttribute("data-item", i);
 
     if ( i != fieldsCurrent ) $fields[i].classList.add('hidden'); // все кроме первой прячем
 
@@ -17,7 +21,11 @@ if (fieldsCount) { // если есть панели
 
     sel[0].addEventListener('change', function(){ // вешаем на него ивент при изменении
 
+      var parent = this.parentNode.parentNode.parentNode.getAttribute("data-item");
+      if( parent != fieldsCurrent) return false;
+
       fieldsCurrent = fieldsCurrent + 1; // следующая панель
+
       if ( fieldsCurrent <= fieldsCount - 1 ){ // если проходим условие
         $fields[fieldsCurrent].classList.remove("hidden"); // то показываем следуюую панель
       } else { // если нет
