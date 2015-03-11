@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Haquest - base - template</title>
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- стили положения на странице -->
+  <style>
+  .quest {
+    background-image: url('img/quest-2.jpg');
+    -webkit-background-size: 1200px;
+    background-size: 1200px;
+    min-height: 1175px;
+  }
+  #item-1 {
+    top: 3px;
+    left: 870px;
+    right: 30px;
+    height: 67px;
+  }
+
+  #item-2 {
+    top: 110px;
+    left: 25px;
+    right: 520px;
+    height: 67px;
+  }
+
+  #item-3 {
+    top: 300px;
+    left: 23px;
+    right: 760px;
+    height: 37px;
+  }
+
+  #item-4 {
+    top: 252px;
+    left: 745px;
+    right: 24px;
+    height: 299px;
+  }
+
+  #item-5 {
+    top: 882px;
+    left: 260px;
+    right: 525px;
+    height: 67px;
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="page-wrap">
+    <form class="quest">
+
+      <!-- элемент задания -->
+      <fieldset class="quest__challenge quest__challenge--yellow" id="item-1">
+        <div class="quest__question-box">
+          <label class="quest__label">Это что за элемент?</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch1">
+              <option value="0" selected></option>
+              <option value="<div>">&lt;div&gt;</option>
+              <option value="<a>">&lt;a&gt;</option>
+              <option value="<btn>">&lt;btn&gt;</option>
+              <option value="<button>">&lt;button&gt;</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- элемент задания -->
+      <fieldset class="quest__challenge quest__challenge--blue" id="item-2">
+        <div class="quest__question-box">
+          <label class="quest__label">Это что за элемент?</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch2">
+              <option value="0" selected></option>
+              <option value="<h1>">&lt;h1&gt;</option>
+              <option value="<div>">&lt;div&gt;</option>
+              <option value="<a>">&lt;a&gt;</option>
+              <option value="<span>">&lt;span&gt;</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- элемент задания -->
+      <fieldset class="quest__challenge quest__challenge--blue" id="item-3">
+        <div class="quest__question-box">
+          <label class="quest__label">Это что за группа элементов?</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch2">
+              <option value="0" selected></option>
+              <option value="span + div">span + div</option>
+              <option value="i + a">i + a</option>
+              <option value="input + label">input + label</option>
+              <option value="li + a">li + a</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- элемент задания -->
+      <fieldset class="quest__challenge quest__challenge--blue" id="item-4">
+        <div class="quest__question-box">
+          <label class="quest__label">Это что за элемент?</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch2">
+              <option value="0" selected></option>
+              <option value="<span>">&lt;span&gt;</option>
+              <option value="<item>">&lt;item&gt;</option>
+              <option value="<article>">&lt;article&gt;</option>
+              <option value="<div>">&lt;div&gt;</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- элемент задания -->
+      <fieldset class="quest__challenge quest__challenge--blue" id="item-5">
+        <div class="quest__question-box">
+          <label class="quest__label">Это что за элементы?</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch2">
+              <option value="0" selected></option>
+              <option value="<span>">&lt;span&gt;</option>
+              <option value="<button>">&lt;button&gt;</option>
+              <option value="<a>">&lt;a&gt;</option>
+              <option value="<div>">&lt;div&gt;</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
