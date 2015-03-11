@@ -8,45 +8,46 @@
   <!-- стили положения на странице -->
   <style>
   .quest {
-    background-image: url('img/quest-2.jpg');
+    background-image: url('img/quest-3.jpg');
     -webkit-background-size: 1200px;
     background-size: 1200px;
     min-height: 1175px;
   }
   #item-1 {
-    top: 3px;
-    left: 870px;
-    right: 30px;
-    height: 67px;
+    top: 230px;
+    left: 10px;
+    right: 10px;
+    height: 80px;
   }
 
   #item-2 {
-    top: 110px;
-    left: 25px;
-    right: 520px;
-    height: 67px;
+    top: 350px;
+    left: 10px;
+    right: 715px;
+    height: 80px;
   }
 
   #item-3 {
-    top: 300px;
-    left: 23px;
-    right: 760px;
-    height: 37px;
+    top: 442px;
+    left: 500px;
+    right: 19px;
+    height: 149px;
   }
 
   #item-4 {
-    top: 252px;
-    left: 745px;
-    right: 24px;
-    height: 299px;
+    top: 690px;
+    left: 19px;
+    right: 580px;
+    height: 110px;
   }
 
   #item-5 {
-    top: 882px;
-    left: 260px;
-    right: 525px;
-    height: 67px;
+    top: 874px;
+    left: 4px;
+    right: 4px;
+    height: 182px;
   }
+
 </style>
 
 </head>
@@ -56,16 +57,15 @@
     <form class="quest">
 
       <!-- элемент задания -->
-      <fieldset class="quest__challenge quest__challenge--yellow" id="item-1">
+      <fieldset class="quest__challenge quest__challenge--blue" id="item-1">
         <div class="quest__question-box">
           <label class="quest__label">Это что за элемент?</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch1">
               <option value="0" selected></option>
               <option value="<div>">&lt;div&gt;</option>
-              <option value="<a>">&lt;a&gt;</option>
-              <option value="<btn>">&lt;btn&gt;</option>
-              <option value="<button>">&lt;button&gt;</option>
+              <option value="<h1>">&lt;h1&gt;</option>
+              <option value="<span>">&lt;span&gt;</option>
             </select>
           </div>
         </div>
@@ -78,9 +78,9 @@
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch2">
               <option value="0" selected></option>
-              <option value="<h1>">&lt;h1&gt;</option>
               <option value="<div>">&lt;div&gt;</option>
-              <option value="<a>">&lt;a&gt;</option>
+              <option value="<h1>">&lt;h1&gt;</option>
+              <option value="<h2>">&lt;h2&gt;</option>
               <option value="<span>">&lt;span&gt;</option>
             </select>
           </div>
@@ -90,14 +90,13 @@
       <!-- элемент задания -->
       <fieldset class="quest__challenge quest__challenge--blue" id="item-3">
         <div class="quest__question-box">
-          <label class="quest__label">Это что за группа элементов?</label>
+          <label class="quest__label">Это что за элемент?</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch3">
               <option value="0" selected></option>
-              <option value="span + div">span + div</option>
-              <option value="i + a">i + a</option>
-              <option value="input + label">input + label</option>
-              <option value="li + a">li + a</option>
+              <option value="<div>">&lt;div&gt;</option>
+              <option value="<ul>">&lt;h1&gt;</option>
+              <option value="<table>">&lt;h2&gt;</option>
             </select>
           </div>
         </div>
@@ -110,26 +109,24 @@
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch4">
               <option value="0" selected></option>
-              <option value="<span>">&lt;span&gt;</option>
-              <option value="<item>">&lt;item&gt;</option>
-              <option value="<article>">&lt;article&gt;</option>
               <option value="<div>">&lt;div&gt;</option>
+              <option value="<p>">&lt;p&gt;</option>
+              <option value="<textarea>">&lt;textarea&gt;</option>
             </select>
           </div>
         </div>
       </fieldset>
 
       <!-- элемент задания -->
-      <fieldset class="quest__challenge quest__challenge--blue" id="item-5">
-        <div class="quest__question-box">
-          <label class="quest__label">Это что за элементы?</label>
+      <fieldset class="quest__challenge quest__challenge--yellow" id="item-5">
+        <div class="quest__question-box quest__question-box--top">
+          <label class="quest__label">Это что за элемент?</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch5">
               <option value="0" selected></option>
-              <option value="<span>">&lt;span&gt;</option>
-              <option value="<button>">&lt;button&gt;</option>
-              <option value="<a>">&lt;a&gt;</option>
-              <option value="<div>">&lt;div&gt;</option>
+              <option value="<after>">&lt;after&gt;</option>
+              <option value="<footblock>">&lt;footblock&gt;</option>
+              <option value="<footer>">&lt;footer&gt;</option>
             </select>
           </div>
         </div>

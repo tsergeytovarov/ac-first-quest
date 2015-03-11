@@ -97,6 +97,11 @@ body {
   margin-top: 2px;
   margin-right: -2px;
 }
+
+.quest__question-box--top{
+  top: auto;
+  bottom: 100%;
+}
   .quest__label {
     display: block;
     margin: 0 0 8px;
