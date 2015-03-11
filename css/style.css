@@ -1,0 +1,160 @@
+html,
+body,
+.page-wrap {
+  min-width: 1020px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.quest {
+  display: block;
+  width: 1020px;
+  margin: 0 auto;
+  background-color: #eee;
+  background-position: top center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 1px #000;
+}
+
+/* одно задание */
+.quest__challenge {
+  display: block;
+  position: absolute;
+  min-height: 30px;
+  min-width: 30px;
+  transition: opacity .3s;
+  border: 2px solid black;
+  background: rgba(0, 0, 0, .1);
+}
+
+  /* разные цвета заданий */
+
+  /* синий */
+  .quest__challenge--blue{
+    border: 2px solid blue;
+    background: rgba(0, 0, 255, .1);
+  }
+  .quest__challenge--blue .quest__question-box{
+    background: rgba(0, 0, 255, .8);
+    color: #fff;
+  }
+
+  /* зеленый */
+  .quest__challenge--green{
+    border: 2px solid green;
+    background: rgba(0, 128, 0, .1);
+  }
+  .quest__challenge--green .quest__question-box{
+    background: rgba(0, 128, 0, .8);
+    color: #fff;
+  }
+
+  /* розовый */
+  .quest__challenge--pink{
+    border: 2px solid rgb(255, 45, 82);
+    background: rgba(255, 45, 82, .1);
+  }
+  .quest__challenge--pink .quest__question-box{
+    background: rgba(255, 45, 82, .8);
+    color: #fff;
+  }
+
+  /* желтый */
+  .quest__challenge--yellow{
+    border: 2px solid rgb(234, 255, 45);
+    background: rgba(234, 255, 45, .1);
+  }
+  .quest__challenge--yellow .quest__question-box{
+    color: #000;
+    background: rgba(234, 255, 45, .8);
+  }
+
+
+/* блок выбора ответа внутри задания */
+.quest__question-box {
+  position: absolute;
+  width: 200px;
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0 10px;
+  top: 100%;
+  right: 0;
+  margin-top: 2px;
+  margin-right: -2px;
+}
+  .quest__label {
+    display: block;
+    margin: 0 0 8px;
+  }
+  .quest__select-wrap {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    overflow: hidden;
+  }
+  .quest__select {
+    width: 100%;
+    margin: 0;
+  }
+
+/* панель ответов */
+.panel {
+  position: fixed;
+  z-index: 20;
+  top: 20px;
+  left: 20px;
+  width: 220px;
+  background-color: #fff;
+  text-align: center;
+  padding: 6px 0 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.panel__btn {
+  display: block;
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+.panel__btn + .panel__btn {
+  margin-top: 5px;
+}
+.panel__btn:hover {
+  text-decoration: none;
+}
+.panel__btn:active,
+.panel__btn.disabled {
+  opacity: .6;
+}
+.panel__btn.disabled {
+  pointer-events: none;
+}
+.panel__btn.hidden {
+  position: absolute;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.results {
+  margin: 10px auto 0;
+  text-align: left;
+}
+.results td:first-child {
+  min-width: 30px;
+  padding-right: 5px;
+  text-align: right;
+}
