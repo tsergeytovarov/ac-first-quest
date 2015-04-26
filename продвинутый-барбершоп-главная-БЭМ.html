@@ -8,40 +8,65 @@
   <!-- стили положения на странице -->
   <style>
   .quest {
-    background-image: url('img/barbershop-item.jpg');
+    background-image: url('img/barbershop-new-main.jpg');
     -webkit-background-size: 1200px;
     background-size: 1200px;
-    min-height: 1175px;
+    min-height: 2721px;
   }
   #bs-item-ch1 {
     top: 0px;
-    left: 30px;
-    right: 30px;
+    left: 50px;
+    right: 310px;
     height: 77px;
   }
   #bs-item-ch2 {
-    top: 165px;
-    left: 30px;
-    right: 260px;
-    height: 55px;
+    top: 0;
+    left: 870px;
+    right: 40px;
+    height: 75px;
   }
   #bs-item-ch3 {
-    top: 305px;
-    left: 570px;
-    right: 20px;
-    height: 180px;
+    top: 560px;
+    left: 660px;
+    right: 18px;
+    height: 160px;
   }
   #bs-item-ch4 {
-    top: 505px;
-    left: 690px;
-    right: 230px;
-    height: 70px;
+    top: 955px;
+    left: 30px;
+    right: 660px;
+    height: 285px;
   }
   #bs-item-ch5 {
-    top: 665px;
-    left: 570px;
-    right: 130px;
-    height: 140px;
+    top: 1075px;
+    left: 370px;
+    right: 365px;
+    height: 50px;
+  }
+  #bs-item-ch6 {
+    top: 1120px;
+    left: 685px;
+    right: 30px;
+    height: 125px;
+  }
+  #bs-item-ch7 {
+    top: 1385px;
+    left: 70px;
+    right: 600px;
+    height: 60px;
+  }
+  #bs-item-ch8 {
+    top: 1760px;
+    left: 930px;
+    right: 20px;
+    height: 160px;
+  }
+
+  #bs-item-ch9 {
+    top: 2610px;
+    left: 420px;
+    right: 420px;
+    height: 50px;
   }
 </style>
 
@@ -50,84 +75,124 @@
 <body>
   <div class="page-wrap">
     <form class="quest">
-
-      <!-- элемент -->
-      <!-- <fieldset class="quest__challenge quest__challenge--blue" id="bs-item-ch1">
-        <div class="quest__question-box">
-          <label class="quest__label">Заголовок</label>
-          <div class="quest__select-wrap">
-            <select class="quest__select" name="ch1">
-              <option value="0" selected></option>
-              <option value="<navigation>">&lt;navigation&gt;</option>
-            </select>
-          </div>
-        </div>
-      </fieldset> -->
-
-
       <fieldset class="quest__challenge quest__challenge--blue" id="bs-item-ch1">
         <div class="quest__question-box">
-          <label class="quest__label">Это что за элемент?</label>
+          <label class="quest__label">Выберите верное название класса</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch1">
               <option value="0" selected></option>
-              <option value="<navigation>">&lt;navigation&gt;</option>
-              <option value="<header>">&lt;header&gt;</option>
-              <option value="<hat>">&lt;hat&gt;</option>
+              <option value=".header__navigation">.header__navigation</option>
+              <option value=".navigation">.navigation</option>
+              <option value=".header-navigation">.header-navigation</option>
             </select>
           </div>
         </div>
       </fieldset>
-      <fieldset class="quest__challenge quest__challenge--green" id="bs-item-ch2">
+      <fieldset class="quest__challenge quest__challenge--blue" id="bs-item-ch2">
         <div class="quest__question-box">
-          <label class="quest__label">Дайте название этому блоку</label>
+          <label class="quest__label">Выберите верное название класса</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch2">
               <option value="0" selected></option>
-              <option value="breadcrumbs">breadcrumbs (хлебные крошки)</option>
-              <option value="waferbar">waferbar (вафельные плитки)</option>
-              <option value="candyroad">candyroad (конфетная дорожка)</option>
+              <option value=".user-block">.user-block</option>
+              <option value=".header__user-block">.header__user-block</option>
+              <option value=".header__user__block">.header__user__block</option>
+              <option value=".header--user-block">.header--user-block</option>
             </select>
           </div>
         </div>
       </fieldset>
       <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch3">
         <div class="quest__question-box">
-          <label class="quest__label">Выберите правильный тег</label>
+          <label class="quest__label">Выберите верное название класса</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch3">
               <option value="0" selected></option>
-              <option value='<div class="intro">'>&lt;div class="intro"&gt;</option>
-              <option value='<p class="description">'>&lt;p class="description"&gt;</option>
-              <option value="section">&lt;section&gt;</option>
-              <option value="span">&lt;span&gt;</option>
+              <option value=".statistic__item">.statistic__item</option>
+              <option value=".statistic-item--light">.statistic-item--light</option>
+              <option value=".statistic__item--light">.statistic__item--light</option>
+              <option value=".statistic-item">.statistic-item</option>
             </select>
           </div>
         </div>
       </fieldset>
-      <fieldset class="quest__challenge quest__challenge--yellow" id="bs-item-ch4">
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch4">
         <div class="quest__question-box">
-          <label class="quest__label">Выберите правильный тег</label>
+          <label class="quest__label">Выберите верное название класса</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch4">
               <option value="0" selected></option>
-              <option value="<button>">&lt;button&gt;</option>
-              <option value="<btn>">&lt;btn&gt;</option>
-              <option value='<a class="button">'>&lt;a class="button"&gt;</option>
-              <option value="<select>">&lt;select&gt;</option>
+              <option value=".features__item">.features__item</option>
+              <option value=".features-item">.features-item</option>
+              <option value=".features--item">.features--item</option>
             </select>
           </div>
         </div>
       </fieldset>
-      <fieldset class="quest__challenge" id="bs-item-ch5">
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch5">
         <div class="quest__question-box">
-          <label class="quest__label">Выберите последовательность тегов</label>
+          <label class="quest__label">Выберите верное название класса</label>
           <div class="quest__select-wrap">
             <select class="quest__select" name="ch5">
               <option value="0" selected></option>
-              <option value="div > (a + a + a ...)">div > (a + a + a ...)</option>
-              <option value="(p > span) + (p > span)">(p > span) + (p > span) + (p > span) ...</option>
-              <option value="ul > li">ul > li</option>
+              <option value=".features__item__title">.features__item__title</option>
+              <option value=".features-item__title">.features-item__title</option>
+              <option value=".title--second">.title--second</option>
+              <option value=".second-title">.second-title</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch6">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верное название класса</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch6">
+              <option value="0" selected></option>
+              <option value=".features__item__text">.features__item__text</option>
+              <option value=".features-item__text">.features-item__text</option>
+              <option value=".text">.text</option>
+              <option value="Без класса">Без класса</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch7">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верное название класса</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch7">
+              <option value="0" selected></option>
+              <option value=".news__title">.news__title</option>
+              <option value=".block__title">.block__title</option>
+              <option value=".second-title">.second-title</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch8">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верное название класса</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch8">
+              <option value="0" selected></option>
+              <option value=".news__title">.slider__control--right</option>
+              <option value=".block__title">.slider__control .right</option>
+              <option value=".second-title">.slider__control .slider__control--right</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch9">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верное название класса</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch9">
+              <option value="0" selected></option>
+              <option value=".social">.social</option>
+              <option value=".footer__social">.footer__social</option>
+              <option value=".footer--social">.footer--social</option>
+              <option value=".social--footer">.social--footer</option>
             </select>
           </div>
         </div>
