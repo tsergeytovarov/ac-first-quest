@@ -28,6 +28,8 @@ if (fieldsCount) { // если есть панели
 
       if ( fieldsCurrent <= fieldsCount - 1 ){ // если проходим условие
         $fields[fieldsCurrent].classList.remove("hidden"); // то показываем следуюую панель
+        var position = $fields[fieldsCurrent].offsetTop - window.innerHeight/2;
+        window.scrollTo(0, position);
       } else { // если нет
         if( message == 0 ){ // и если еще не выводили сообщение что задание выполнено
           alert("задание выполнено!"); // выводим сообщение
