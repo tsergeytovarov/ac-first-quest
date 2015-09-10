@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Haquest - base - template</title>
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- стили положения на странице -->
+  <style>
+  .quest {
+    background-image: url('img/barbershop-new-main.jpg');
+    -webkit-background-size: 1200px;
+    background-size: 1200px;
+    min-height: 2721px;
+  }
+  #bs-item-ch1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 77px;
+  }
+  #bs-item-ch2 {
+    top: 100px;
+    left: 280px;
+    right: 280px;
+    height: 200px;
+  }
+  #bs-item-ch3 {
+    top: 580px;
+    left: 50px;
+    right: 715px;
+    height: 105px;
+  }
+  #bs-item-ch4 {
+    top: 955px;
+    left: 30px;
+    right: 660px;
+    height: 285px;
+  }
+  #bs-item-ch5 {
+    top: 1075px;
+    left: 370px;
+    right: 365px;
+    height: 50px;
+  }
+  #bs-item-ch6 {
+    top: 1120px;
+    left: 685px;
+    right: 30px;
+    height: 125px;
+  }
+  #bs-item-ch7 {
+    top: 1385px;
+    left: 70px;
+    right: 600px;
+    height: 60px;
+  }
+  #bs-item-ch8 {
+    top: 2610px;
+    left: 420px;
+    right: 420px;
+    height: 50px;
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="page-wrap">
+    <form class="quest">
+      <fieldset class="quest__challenge quest__challenge--blue" id="bs-item-ch1">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch1">
+              <option value="0" selected></option>
+              <option value="header">header</option>
+              <option value=".l-header">.l-header</option>
+              <option value=".main-header">.main-header</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--blue" id="bs-item-ch2">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch2">
+              <option value="0" selected></option>
+              <option value=".logo">.logo</option>
+              <option value="img">img</option>
+              <option value=".container .logo">.container .logo</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch3">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch3">
+              <option value="0" selected></option>
+              <option value=".statistic .title">.statistic .title</option>
+              <option value=".statistic .title">.statistic h1</option>
+              <option value=".statistic-title">.statistic-title</option>
+              <option value="h1">h1</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch4">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch4">
+              <option value="0" selected></option>
+              <option value=".features-item">.features-item</option>
+              <option value="article">article</option>
+              <option value=".features .feature">.features .feature</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch5">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch5">
+              <option value="0" selected></option>
+              <option value=".features-item > h1">.features-item > h1</option>
+              <option value="h1">h1</option>
+              <option value=".feature-title">.feature-title</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch6">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch6">
+              <option value="0" selected></option>
+              <option value=".feature-text">.feature-text</option>
+              <option value=".features-item > p">.features-item > p</option>
+              <option value="p">p</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch7">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верный CSS селектор</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch7">
+              <option value="0" selected></option>
+              <option value=".section-title">.section-title</option>
+              <option value="h2">h2</option>
+              <option value="section .title">section .title</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="quest__challenge quest__challenge--pink" id="bs-item-ch8">
+        <div class="quest__question-box">
+          <label class="quest__label">Выберите верное название класса</label>
+          <div class="quest__select-wrap">
+            <select class="quest__select" name="ch8">
+              <option value="0" selected></option>
+              <option value="div">div</option>
+              <option value=".main-footer .social-block">.main-footer .social-block</option>
+              <option value="footer > .social-block">footer > .social-block</option>
+              <option value=".social-block">.social-block</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
